@@ -17,11 +17,11 @@ def get_position(x,y,center_x,center_y,radius): #Функция для нахо�
     distance_square = ((x - center_x)**2 +(y - center_y)**2)
     radius_square = radius**2
     if distance_square < radius_square:
-        return "1 - точка лежит внутри"
+        return "1"
     elif distance_square > radius_square:
-        return "2 - точка лежит снаружи"
+        return "2"
     else:
-        return "0 - точка лежит на окружности"
+        return "0"
 def main():
     data1 = sys.argv[1] #Объявление путей к файлам
     data2 = sys.argv[2]

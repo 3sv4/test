@@ -1,5 +1,6 @@
-n = int(input("Введите n: "))
-m = int(input("Введите m: "))
+import sys
+n = int(sys.argv[1])
+m = int(sys.argv[2])
 m1 = m +1; m2 = m -1 #Переменные для удобного счёта
 arr = []; i = 1
 for k in range(m1): #Заполнение массива
@@ -17,6 +18,5 @@ while True: #Цикл, в котором считается следующее �
         trvl.append(arr[k%m1])
     else: 
         break
-print("Путь: ",end="")
 for j in range(len(trvl)):
     print(trvl[j],end="")
